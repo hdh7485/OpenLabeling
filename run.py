@@ -40,6 +40,7 @@ point_2 = (-1, -1)
 
 def change_img_index(x):
     global img_index, img
+    print("change_img_index")
     img_index = x
     img_path = image_list[img_index]
     img = cv2.imread(img_path)
@@ -416,9 +417,11 @@ while True:
         # show previous image key listener
         if pressed_key == ord('a'):
             img_index = decrease_index(img_index, last_img_index)
+            change_img_index(img_index)
         # show next image key listener
         elif pressed_key == ord('d'):
             img_index = increase_index(img_index, last_img_index)
+            change_img_index(img_index)
         cv2.setTrackbarPos(TRACKBAR_IMG, WINDOW_NAME, img_index)
     elif pressed_key == ord('s') or pressed_key == ord('w'):
         # change down current class key listener
