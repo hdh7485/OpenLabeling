@@ -331,6 +331,7 @@ for img_path in image_list:
 # load class list
 with open('class_list.txt') as f:
     class_list = f.read().splitlines()
+    class_list.append(' ')
 #print(class_list)
 last_class_index = len(class_list) - 1
 
