@@ -1,7 +1,3 @@
-cross_walk
-U_turn
-parking
-narrow_path
-construction
-s_couse
-bicycle
+go
+stop
+warning
