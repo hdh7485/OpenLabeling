@@ -1,3 +1,8 @@
-go
-stop
-warning
+cross_walk
+narrow_path
+u_turn
+Parking
+Parking_A
+Parking_B
+Go
+Stop
